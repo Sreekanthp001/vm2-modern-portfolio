@@ -1,13 +1,18 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  eslint: {
-    ignoreDuringBuilds: true,
+  // Build time lo linting errors ignore cheyadaniki
+  eslint: { ignoreDuringBuilds: true },
+  typescript: { ignoreBuildErrors: true },
+  
+  // Ee kindha unna block ni add chei
+  webpack: (config, { isServer }) => {
+    if (isServer) {
+      config.externals.push({
+        'canvas': 'canvas',
+      })
+    }
+    return config
   },
-  typescript: {
-    ignoreBuildErrors: true,
-  },
-  // Document is not defined error raakunda idi help chestundi
-  output: 'standalone', 
 };
 
 export default nextConfig;
