@@ -1,7 +1,7 @@
 "use client"; 
 
 import { FaLocationArrow } from "react-icons/fa6";
-import MagicButton from "./MagicButton"; // path is correct now as per your screenshot
+import MagicButton from "./MagicButton"; // Because they are in the same folder
 import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 
