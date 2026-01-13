@@ -1,5 +1,7 @@
+"use client"; // <--- IDI CHALA IMPORTANT MAWA
+
 import { FaLocationArrow } from "react-icons/fa6";
-import MagicButton from "./MagicButton"; // path correct ga check chey
+import MagicButton from "./ui/MagicButton"; // <--- Path correct chesa (ui folder lo unte)
 import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 
@@ -31,7 +33,6 @@ const Hero = () => {
             Hi! I&apos;m VentureMond, a Modern Web Developer bringing your brand to life.
           </p>
 
-          {/* UPDATED: link to #projects for better UX */}
           <a href="#projects">
             <MagicButton
               title="Show my work"
