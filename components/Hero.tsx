@@ -1,5 +1,5 @@
 import { FaLocationArrow } from "react-icons/fa6";
-import MagicButton from "./ui/MagicButton"; // path correct ga check chey
+import MagicButton from "./MagicButton"; // path correct ga check chey
 import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 
